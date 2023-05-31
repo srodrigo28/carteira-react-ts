@@ -1,4 +1,4 @@
-import { Container } from "./style";
+import { Container, Tag } from "./style";
 
 interface IHistoryFinanceCardPros{
     cardColor: string;
@@ -11,13 +11,15 @@ interface IHistoryFinanceCardPros{
 export function HistoryFinanceCard( 
     {cardColor, tagColor, title, subtitle, amount} 
     : IHistoryFinanceCardPros){
+    
     return(
-        <Container>
-            <h1>HistoryFinanceCard</h1>
-            
-            {cardColor} {tagColor}
-            {title} {subtitle}
-            {amount}
+        <Container color={cardColor}>
+            <Tag color={tagColor} />  
+            <div>
+                <span>{title}</span>
+                <small>{subtitle}</small>
+                <h3>{amount}</h3>
+            </div>
         </Container>
     )
 }
