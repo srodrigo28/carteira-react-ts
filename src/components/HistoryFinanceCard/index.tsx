@@ -14,12 +14,15 @@ export function HistoryFinanceCard(
     
     return(
         <Container color={cardColor}>
+            
             <Tag color={tagColor} />  
+            
             <div>
                 <span>{title}</span>
                 <small>{subtitle}</small>
                 <h3>{amount}</h3>
             </div>
+            
         </Container>
     )
 }
