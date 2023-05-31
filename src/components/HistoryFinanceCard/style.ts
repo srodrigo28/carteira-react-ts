@@ -1,35 +1,41 @@
 import styled from "styled-components";
 
-interface IContainerPrpos{ color: string; }
-interface ITagProps{ color: string; }
+interface ITagProps{ 
+    color: string; 
+}
 
-export const Container = styled.li<IContainerPrpos>`
-    background-color: ${props => props.color};
-    list-style: none;  
+export const Container = styled.li`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 10px 0;
+    padding: 12px;
     border-radius: 5px;
-    margin: 10px 0; 
-    padding: 12px 10px;
-    
-    cursor: pointer; 
-    transition: .5s;
-    position: relative;
+    background-color: ${props => props.theme.colors.tertiary};
 
-    > div{
-        display: flex; 
-        justify-content: space-between;
+    cursor: pointer;
+    transition: all 1s;
+    position: relative;
+    
+    > div {
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
     }
 
-    &:hover{ 
-        opacity: .7; 
-        transform: translateX(20px);
+    &:hover{
+        opacity: .7;
+        transform: translateX(10px);
     }
 `;
 
 export const Tag = styled.div<ITagProps>`
-    width: 10px;
-    height: 60%;
-    position: absolute;
-
     background-color: ${props => props.color};
-    
+    width: 15px;
+    height: 60px;
+    position: absolute;
+    margin-left: -12px;
+    border-radius: 10px;
 `;

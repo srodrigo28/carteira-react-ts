@@ -1,7 +1,6 @@
 import { Container, Tag } from "./style";
 
 interface IHistoryFinanceCardPros{
-    cardColor: string;
     tagColor: string;
     title: string;
     subtitle: string;
@@ -9,20 +8,18 @@ interface IHistoryFinanceCardPros{
 }
 
 export function HistoryFinanceCard( 
-    {cardColor, tagColor, title, subtitle, amount} 
+    {tagColor, title, subtitle, amount} 
     : IHistoryFinanceCardPros){
     
     return(
-        <Container color={cardColor}>
-            
-            <Tag color={tagColor} />  
-            
-            <div>
+        <Container>
+            <Tag color={tagColor} />
+
+            <div className="info">
                 <span>{title}</span>
                 <small>{subtitle}</small>
-                <h3>{amount}</h3>
             </div>
-            
+            <h3>{amount}</h3>
         </Container>
     )
 }

@@ -10,15 +10,20 @@ export function List(){
     ]
     return(
         <Container>
-            <ContentHeader title="Saídas" lineColor="#FFFF33 ">
+            <ContentHeader title="Saídas" lineColor="#FFFF33">
                 <SelectInput options={contas} />
             </ContentHeader>
-            <HistoryFinanceCard 
-                cardColor={"#313862"} 
+            <HistoryFinanceCard  
                 tagColor={"#E44C4E"}
                 subtitle={"20-05-2023"}
                 title={"Conta de Luz"}
                 amount={" R$ 180,00"}
+            />
+            <HistoryFinanceCard  
+                tagColor={"#FFFF33"}
+                subtitle={"20-05-2023"}
+                title={"Conta de Agua"}
+                amount={" R$ 170,00"}
             />
         </Container>
     )
