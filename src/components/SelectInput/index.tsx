@@ -8,7 +8,7 @@ interface ISelectInputProps { // tipagem para uso
 }
 export function SelectInput( {options} : ISelectInputProps) {
     return(
-        <Container>›
+        <Container>
             <select>
                 { options.map(option => (
                         <option

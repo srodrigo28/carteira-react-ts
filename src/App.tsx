@@ -1,13 +1,13 @@
 import { ThemeProvider } from "styled-components";
 import { Layout } from "./components/Layout";
 import dark from "./style/theme/dark";
-import { Dashboard } from "./page/Dashboard";
+import { List } from "./page/List";
 
 export function App(){
     return(
        <ThemeProvider theme={dark}>
         <Layout>
-            <Dashboard/>
+            <List/>
         </Layout>
        </ThemeProvider>
     )
