@@ -1,5 +1,5 @@
 ### Criando o projeto
-##### https://www.udemy.com/course/react-e-typescript/learn/lecture/21261736#learning-tools
+##### https://www.udemy.com/course/react-e-typescript/learn/lecture/21311590#learning-tools
 * criando o projeto
 ```sh
 npm create vite@latest

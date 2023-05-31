@@ -1,11 +1,11 @@
-import { Container, ToggleLabel } from "./style";
+import { Container, ToggleLabel, ToggleSelector } from "./style";
 
 export function Toggle(){
 
     return(
         <Container>
             <ToggleLabel>Light</ToggleLabel>
-            <Switch 
+            <ToggleSelector 
                 checked
                 uncheckedIcon={false}
                 checkedIcon={false}
